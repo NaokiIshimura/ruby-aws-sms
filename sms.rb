@@ -19,4 +19,4 @@ def send_sms(tel:, msg:)
 end
 
 send_sms(tel: '+81 xxxxxxxxxx',
-         msg: "テスト1\nテスト2\nテスト3")
+         msg: "テスト")
