@@ -7,7 +7,7 @@ def send_sms(tel:, msg:)
   #     region:            'xxxxx'
   # )
   
-  # arn = 'arn:aws:sns:ap-northeast-1:646887767209:test-topic'   # Topicで作成したARN
+  # arn = 'arn:aws:sns:ap-northeast-1:xxxxx:xxxxx'   # Topicで作成したARN
   # res = sns.publish({
   #                       topic_arn: arn,
   #                       message: msg
