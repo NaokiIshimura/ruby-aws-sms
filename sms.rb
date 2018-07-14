@@ -9,7 +9,7 @@ def send_sms(tel:, msg:)
   
   sns = Aws::SNS::Client.new()
   
-  # オプション：送信するメッセージのタイプで「Transactional」を指定
+  # オプション：送信するメッセージのタイプに「Transactional」を指定
   # sns.set_sms_attributes({
   #                            attributes: {
   #                                "DefaultSMSType": "Transactional"
