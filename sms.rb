@@ -7,13 +7,16 @@ def send_sms(tel:, msg:)
   #     region:            'xxxxx'
   # )
   
-  # arn = 'arn:aws:sns:ap-northeast-1:646887767209:test-topic'   # Topicで作成したARN
-  # res = sns.publish({
-  #                       topic_arn: arn,
-  #                       message: msg
-  #                   })
   
   sns = Aws::SNS::Client.new()
+  
+  # オプション：送信するメッセージのタイプでTransactionalを指定
+  # sns.set_sms_attributes({
+  #                            attributes: {
+  #                                "DefaultSMSType": "Transactional"
+  #                            },
+  #                        })
+  
   sns.publish(phone_number: tel, message: msg)
 
 end
