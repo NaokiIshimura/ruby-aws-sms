@@ -16,11 +16,11 @@ gem install aws-sdk
 ```
 export AWS_ACCESS_KEY_ID="xxxxx"
 export AWS_SECRET_ACCESS_KEY="xxxxx"
-export AWS_REGION="ap-xxxxx"
+export AWS_REGION="ap-northeast-1"
 ruby sms.rb
 ```
 
 ## memo
 
-- 半角：200文字送信→153/43文字の2通で受信
+- 半角：200文字送信→153/47文字の2通で受信
 - 全角：200文字送信→67/66/67文字の3通で受信

@@ -7,7 +7,6 @@ def send_sms(tel:, msg:)
   #     region:            'xxxxx'
   # )
   
-  
   sns = Aws::SNS::Client.new()
   
   # オプション：送信するメッセージのタイプでTransactionalを指定
@@ -22,4 +21,4 @@ def send_sms(tel:, msg:)
 end
 
 send_sms(tel: '+81 xxxxxxxxxx',
-         msg: "テスト1\nテスト2\nテスト3")
+         msg: "テスト")
